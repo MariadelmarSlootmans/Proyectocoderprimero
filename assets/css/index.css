@@ -296,8 +296,8 @@ h3 {
     margin: 5rem;
     display: grid;
     grid-gap: 20px;
-   grid-template-columns: repeat(3, 1fr);
-    /*  grid-template-rows: repeat(2, 1fr); */
+  /* grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: repeat(2, 1fr); */
     grid-template-areas:
         "prod3 prod4  prod5 "
 }
