@@ -99,21 +99,22 @@ header .menu__item:hover {
 
 /* Index*/
 
-.presentacion{
+
+.presentacion {
     align-items: center;
     display: grid;
     grid-gap: 20px;
     grid-template-areas:
-   "presentacion__parrafo     presentacion__picture2  "
-   "presentacion__picture      presentacion__parrafo2  ";
- }
- 
+        "presentacion__parrafo     presentacion__picture2  "
+        "presentacion__picture      presentacion__parrafo2  ";
+}
 
-.presentacion__picture{
+
+.presentacion__picture {
     grid-area: presentacion__picture;
 }
 
-.presentacion__picture2{
+.presentacion__picture2 {
     grid-area: presentacion__picture2;
 }
 
@@ -130,11 +131,12 @@ header .menu__item:hover {
 }
 
 .presentacion__parrafo {
-    grid-area:presentacion__parrafo;
+    grid-area: presentacion__parrafo;
     font-style: normal;
     font-size: var(--texto-min);
     padding: 1em;
 }
+
 .presentacion__parrafo2 {
     grid-area: presentacion__parrafo2;
     font-style: normal;
@@ -177,7 +179,7 @@ footer .boto:hover {
 
 /* Nosotros*/
 
-.bodynosotros{
+.bodynosotros {
     background-color: var(--principal);
 }
 
@@ -185,34 +187,37 @@ h2 {
     font-size: 3.5em;
     font-style: italic;
 }
+
 h3 {
     font-size: 1.8em;
     font-style: bold;
 }
 
-.img{
+.img {
     width: 100%;
 }
 
-.textohistoria{
-    margin: 20px;
+.textohistoria {
+    font-size: var(--texto-min);
+    margin: 10px;
     text-align: center;
+    flex-basis: 50%;
 }
 
 
-.nosotros{
-   display: grid;
-   grid-gap: 20px;
-   grid-template-areas:
-  "historia           profesionales "
-"historia              profesionales"
+.nosotros {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-areas:
+        "historia           profesionales "
+        "historia              profesionales"
 }
 
-.historia{
+.historia {
     grid-area: historia;
 }
 
-.profesionales{
+.profesionales {
     grid-area: profesionales;
 }
 
@@ -233,41 +238,42 @@ h3 {
 }
 
 
-.primert_nosotros{
+.primert_nosotros {
     text-align: center;
 }
 
-.profesionales{
+.profesionales {
     align-items: center;
     justify-items: center;
     display: grid;
     grid-gap: 20px;
     grid-template-areas:
-    "segundot_nosotros segundot_nosotros segundot_nosotros "
-    " primerprofesional segundoprofesional tercerprofesional"
-    " botonnosotros botonnosotros botonnosotros "
+        "segundot_nosotros segundot_nosotros segundot_nosotros "
+        " primerprofesional segundoprofesional tercerprofesional"
+        " botonnosotros botonnosotros botonnosotros "
 }
-.segundot_nosotros{
+
+.segundot_nosotros {
     grid-area: segundot_nosotros;
     text-align: center;
 }
 
-.primerprofesional{
+.primerprofesional {
     grid-area: primerprofesional;
     text-align: center;
 }
 
-.segundoprofesional{
+.segundoprofesional {
     grid-area: segundoprofesional;
     text-align: center;
 }
 
-.tercerprofesional{
+.tercerprofesional {
     grid-area: tercerprofesional;
     text-align: center;
 }
 
-.botonnosotros{
+.botonnosotros {
     grid-area: botonnosotros;
 }
 
@@ -275,11 +281,11 @@ h3 {
 
 /* Productos*/
 
-.bodyproductos{
+.bodyproductos {
     background-color: var(--principal)
 }
 
-.nosprod{
+.nosprod {
     font-size: 3.5em;
     font-style: italic;
     text-align: center;
@@ -287,32 +293,39 @@ h3 {
 }
 
 .galeriadeproductos {
+    margin: 5rem;
     display: grid;
-    grid-gap: 10px;
-     /* grid-template-columns: repeat(6, 1fr);
-    grid-template-rows: repeat(2, 1fr); */
+    grid-gap: 20px;
+   grid-template-columns: repeat(3, 1fr);
+    /*  grid-template-rows: repeat(2, 1fr); */
     grid-template-areas:
-        "prod1 prod1 prod1 prod2 prod2 prod2"
-        "prod3 prod3 prod4 prod4 prod5 prod5"
+        "prod3 prod4  prod5 "
 }
 
-.prod1{
-    grid-area:prod1 ;
-}
-.prod2{
-    grid-area: prod2 ;
-}
-.prod3{
-    grid-area: prod3 ;
-}
-.prod4{
-    grid-area: prod4 ;
-}
-.prod5{
-    grid-area: prod5 ;
+.prod1 {
+    grid-area: prod1;
 }
 
-.prod7{
+.prod2 {
+    grid-area: prod2;
+}
+
+.prod3 {
+    grid-area: prod3;
+
+}
+
+.prod4 {
+    grid-area: prod4;
+
+}
+
+.prod5 {
+    grid-area: prod5;
+
+}
+
+.prod7 {
     text-align: center;
     padding: 1rem;
 }
@@ -320,50 +333,55 @@ h3 {
 
 
 /* Galeria*/
-.bodygaleria{
-    background-color: var(--principal);
+.bodygaleria {
+    background-image: linear-gradient(to top, #ffeaee, #ffeaee, #ffeaee, #ffeaee, #ffeaee, #ffe2e7, #ffd9e1, #ffd1da, #ffbecb, #ffabbc, #ff98ac, #ff849c);
+
 }
 
-img{
+.header_galeria{
+    background-color:#ffabbc ;
+}
+
+img {
     width: 100%;
 }
 
-.galeria{
+.galeria {
     justify-items: center;
     align-items: center;
     display: grid;
     grid-gap: 20px;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-areas: 
-    "primertitulogal segundotitulogal"
-    "masaje                       mascarita"
-    "hialuronico                  peeling";
+    grid-template-areas:
+        "primertitulogal segundotitulogal"
+        "masaje                       mascarita"
+        "hialuronico                  peeling";
 }
 
-.primertitulogal{
+.primertitulogal {
     grid-area: primertitulogal;
     text-align: center;
 }
 
-.masaje{
+.masaje {
     grid-area: masaje;
 }
 
-.hialuronico{
+.hialuronico {
     grid-area: hialuronico;
 }
 
-.segundotitulogal{
+.segundotitulogal {
     grid-area: segundotitulogal;
     text-align: center;
-    
+
 }
 
-.mascartia{
+.mascartia {
     grid-area: mascarita;
 }
 
-.peeling{
+.peeling {
     grid-area: peeling;
 }
 
@@ -371,55 +389,75 @@ img{
 
 /* CONTACTO*/
 
+.boton__contacto{
+    font-size: var(--texto-md);
+    font-family: var(--font-primary);
+    color: white;
+    border: 3px solid var(--secundario);
+    background-color: var(--secundario);
+    border-radius: 20px;
+    text-align: center;
+    padding: 1rem;
+    background-color: #5D8A7C;
+}
+
+.titulo__contacto{
+    text-align: center;
+}
+
+.titulo__contacto2{
+    text-align: center;
+}
+
 
 
 /* Mediaq  1200px, 1024px, 768px, 600px, 480px, 320px.*/
 
-@media screen and (max-width: 768px){
-    header{
+@media screen and (max-width: 768px) {
+    header {
         padding: 2em;
     }
-    
-header .navbar{
-    flex-wrap: wrap;
-    justify-content: center;
-}
 
-.presentacion {
-    flex-grow: 1;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-
-.presentacion__parrafo{
-    font-size: 1.5em;
-}
-
-
- .foot {
-    padding: 0 2em;
-    flex-wrap:wrap;
-    justify-content: center;
-   flex-direction: column;
-}
-
-.boto{
-    margin: 0.5em;
-}
-}
-
-@media screen and (max-width:320px) {
-
-    header .navbar{
+    header .navbar {
         flex-wrap: wrap;
         justify-content: center;
     }
 
-    .nosotros{
-        grid-template-areas: 
-        "historia "
-        " profesionales" ;
+    .presentacion {
+        flex-grow: 1;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+
+    .presentacion__parrafo {
+        font-size: 1.5em;
+    }
+
+
+    .foot {
+        padding: 0 2em;
+        flex-wrap: wrap;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .boto {
+        margin: 0.5em;
+    }
+}
+
+@media screen and (max-width:320px) {
+
+    header .navbar {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .nosotros {
+        grid-template-areas:
+            "historia "
+            " profesionales";
     }
 }
