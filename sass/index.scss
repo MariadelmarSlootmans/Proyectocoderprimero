@@ -1,0 +1,20 @@
+
+@import url('https://fonts.googleapis.com/css2? family= Poppins:ital,wght@0,200;0,400;0,500;1,100;1,200;1,300;1,400;1,500 & display=swap');
+
+/* Miscelaneous*/
+@import "./misc/normalize";
+@import "./misc/mixins";
+@import "./misc/variables";
+@import "./misc/animations";
+
+/*Partials*/
+@import "./partials/header";
+@import "./partials/footer";
+
+/*Viewssass*/
+
+@import "./viewssass/inicio";
+@import "./viewssass/contacto";
+@import "./viewssass/galeria";
+@import "./viewssass/nosotros";
+@import "./viewssass/productos";

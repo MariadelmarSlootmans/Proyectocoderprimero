@@ -1,0 +1,98 @@
+
+.bodynosotros {
+    background-color:  $principal;
+}
+
+h2 {
+    font-size: 3.5em;
+    font-style: italic;
+}
+
+h3 {
+    font-size: 1.8em;
+    font-style: bold;
+}
+
+.img {
+    width: 100%;
+}
+
+.textohistoria {
+    font-size: $texto-min;
+    margin: 10px;
+    text-align: center;
+    flex-basis: 50%;
+}
+
+
+.nosotros {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-areas:
+        "historia           profesionales "
+        "historia              profesionales"
+}
+
+.historia {
+    grid-area: historia;
+}
+
+.profesionales {
+    grid-area: profesionales;
+}
+
+.botonnosotros {
+    font-size: $texto-md;
+    font-family: $font-primary;
+    color: white;
+    border: 3px solid  $secundario;
+    background-color:  $secundario;
+    border-radius: 20px;
+    text-align: center;
+    padding: 1rem;
+}
+
+.botonnosotros:hover {
+    border: 3px solid $terciario;
+    background-color: $terciario;
+}
+
+
+.primert_nosotros {
+    text-align: center;
+}
+
+.profesionales {
+    align-items: center;
+    justify-items: center;
+    display: grid;
+    grid-gap: 20px;
+    grid-template-areas:
+        "segundot_nosotros segundot_nosotros segundot_nosotros "
+        " primerprofesional segundoprofesional tercerprofesional"
+        " botonnosotros botonnosotros botonnosotros "
+}
+
+.segundot_nosotros {
+    grid-area: segundot_nosotros;
+    text-align: center;
+}
+
+.primerprofesional {
+    grid-area: primerprofesional;
+    text-align: center;
+}
+
+.segundoprofesional {
+    grid-area: segundoprofesional;
+    text-align: center;
+}
+
+.tercerprofesional {
+    grid-area: tercerprofesional;
+    text-align: center;
+}
+
+.botonnosotros {
+    grid-area: botonnosotros;
+}

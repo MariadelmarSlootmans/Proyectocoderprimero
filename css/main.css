@@ -1,0 +1,284 @@
+@import url("https://fonts.googleapis.com/css2? family= Poppins:ital,wght@0,200;0,400;0,500;1,100;1,200;1,300;1,400;1,500 & display=swap");
+/* Miscelaneous*/
+/* Normalize */
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box; }
+
+/* Globales */
+html {
+  font-size: 62.5%;
+  font-family: poppins; }
+
+ul {
+  list-style-type: none; }
+
+a {
+  text-decoration: none;
+  color: white;
+  display: inline-block; }
+
+/* Ayudas */
+.flex-row {
+  display: flex; }
+
+.flex-colum {
+  display: flex;
+  flex-direction: column; }
+
+.contenedor-header {
+  max-width: 1257px;
+  margin: 0 auto; }
+
+.contenedor-texto {
+  max-width: 1146px;
+  margin: 0 auto; }
+
+.contenedor-footer {
+  max-width: 1262px;
+  margin: 0 auto; }
+
+/* Variables */
+/*Partials*/
+header {
+  display: inline-block;
+  background-color: #FFEAEE;
+  width: 100%; }
+  header .navbar {
+    justify-content: space-between;
+    align-items: center;
+    padding: 5rem 2rem; }
+  header .menu {
+    flex-basis: 40%;
+    justify-content: space-between; }
+    header .menu .menu__item {
+      border: 3px solid #5D8A7C;
+      background-color: #5D8A7C;
+      border-radius: 20px; }
+    header .menu .menu__item:hover {
+      border: 3px solid #95B8AD;
+      background-color: #95B8AD; }
+    header .menu .menu .menu__item .menu__link {
+      font-size: 1.2em;
+      padding: 0.5rem; }
+
+footer {
+  background-color: #FFEAEE;
+  height: 21em; }
+  footer .foot {
+    justify-content: space-between;
+    align-items: center;
+    padding: 5rem 2rem; }
+  footer .boto {
+    font-size: 1.2em;
+    font-family: "Poppins";
+    color: white;
+    border: 3px solid #5D8A7C;
+    background-color: #5D8A7C;
+    border-radius: 20px; }
+    footer .boto .boto:hover {
+      border: 3px solid #95B8AD;
+      background-color: #95B8AD; }
+  footer .redes {
+    flex-basis: 30%;
+    justify-content: space-between; }
+
+/*Viewssass*/
+.presentacion {
+  align-items: center;
+  display: grid;
+  grid-gap: 20px;
+  grid-template-areas: "presentacion__parrafo     presentacion__picture2  " "presentacion__picture      presentacion__parrafo2  "; }
+
+.presentacion__picture {
+  grid-area: presentacion__picture; }
+
+.presentacion__picture2 {
+  grid-area: presentacion__picture2; }
+
+.titulo {
+  font-size: 3.5em;
+  font-style: italic;
+  justify-content: center;
+  text-align: center;
+  margin-bottom: 3rem; }
+
+.presentacion__img {
+  width: 100%; }
+
+.presentacion__parrafo {
+  grid-area: presentacion__parrafo;
+  font-style: normal;
+  font-size: 1.8em;
+  padding: 1em; }
+
+.presentacion__parrafo2 {
+  grid-area: presentacion__parrafo2;
+  font-style: normal;
+  font-size: 1.8em;
+  padding: 1em; }
+
+.boton__contacto {
+  font-size: 1.2em;
+  font-family: "Poppins";
+  color: white;
+  border: 3px solid #5D8A7C;
+  background-color: #5D8A7C;
+  border-radius: 20px;
+  text-align: center;
+  padding: 1rem;
+  background-color: #5D8A7C; }
+
+.titulo__contacto {
+  text-align: center; }
+
+.titulo__contacto2 {
+  text-align: center; }
+
+/* Galeria*/
+.bodygaleria {
+  background-image: linear-gradient(to top, #ffeaee, #ffeaee, #ffeaee, #ffeaee, #ffeaee, #ffe2e7, #ffd9e1, #ffd1da, #ffbecb, #ffabbc, #ff98ac, #ff849c); }
+
+.header_galeria {
+  background-color: #ffabbc; }
+
+img {
+  width: 100%; }
+
+.galeria {
+  justify-items: center;
+  align-items: center;
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-areas: "primertitulogal segundotitulogal" "masaje                       mascarita" "hialuronico                  peeling"; }
+
+.primertitulogal {
+  grid-area: primertitulogal;
+  text-align: center; }
+
+.masaje {
+  grid-area: masaje; }
+
+.hialuronico {
+  grid-area: hialuronico; }
+
+.segundotitulogal {
+  grid-area: segundotitulogal;
+  text-align: center; }
+
+.mascartia {
+  grid-area: mascarita; }
+
+.peeling {
+  grid-area: peeling; }
+
+.bodynosotros {
+  background-color: #FFEAEE; }
+
+h2 {
+  font-size: 3.5em;
+  font-style: italic; }
+
+h3 {
+  font-size: 1.8em;
+  font-style: bold; }
+
+.img {
+  width: 100%; }
+
+.textohistoria {
+  font-size: 1.8em;
+  margin: 10px;
+  text-align: center;
+  flex-basis: 50%; }
+
+.nosotros {
+  display: grid;
+  grid-gap: 20px;
+  grid-template-areas: "historia           profesionales " "historia              profesionales"; }
+
+.historia {
+  grid-area: historia; }
+
+.profesionales {
+  grid-area: profesionales; }
+
+.botonnosotros {
+  font-size: 1.2em;
+  font-family: "Poppins";
+  color: white;
+  border: 3px solid #5D8A7C;
+  background-color: #5D8A7C;
+  border-radius: 20px;
+  text-align: center;
+  padding: 1rem; }
+
+.botonnosotros:hover {
+  border: 3px solid #95B8AD;
+  background-color: #95B8AD; }
+
+.primert_nosotros {
+  text-align: center; }
+
+.profesionales {
+  align-items: center;
+  justify-items: center;
+  display: grid;
+  grid-gap: 20px;
+  grid-template-areas: "segundot_nosotros segundot_nosotros segundot_nosotros " " primerprofesional segundoprofesional tercerprofesional" " botonnosotros botonnosotros botonnosotros "; }
+
+.segundot_nosotros {
+  grid-area: segundot_nosotros;
+  text-align: center; }
+
+.primerprofesional {
+  grid-area: primerprofesional;
+  text-align: center; }
+
+.segundoprofesional {
+  grid-area: segundoprofesional;
+  text-align: center; }
+
+.tercerprofesional {
+  grid-area: tercerprofesional;
+  text-align: center; }
+
+.botonnosotros {
+  grid-area: botonnosotros; }
+
+.bodyproductos {
+  background-color: #FFEAEE; }
+
+.nosprod {
+  font-size: 3.5em;
+  font-style: italic;
+  text-align: center; }
+
+.galeriadeproductos {
+  margin: 5rem;
+  display: grid;
+  grid-gap: 20px;
+  /* grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: repeat(2, 1fr); */
+  grid-template-areas: "prod3 prod4  prod5 "; }
+
+.prod1 {
+  grid-area: prod1; }
+
+.prod2 {
+  grid-area: prod2; }
+
+.prod3 {
+  grid-area: prod3; }
+
+.prod4 {
+  grid-area: prod4; }
+
+.prod5 {
+  grid-area: prod5; }
+
+.prod7 {
+  text-align: center;
+  padding: 1rem; }

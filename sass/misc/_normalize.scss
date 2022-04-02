@@ -1,0 +1,23 @@
+/* Normalize */
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+/* Globales */
+
+html {
+    font-size: 62.5%;
+    font-family:  poppins;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    display: inline-block;
+}

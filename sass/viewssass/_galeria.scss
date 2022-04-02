@@ -1,0 +1,53 @@
+
+/* Galeria*/
+.bodygaleria {
+    background-image: linear-gradient(to top, #ffeaee, #ffeaee, #ffeaee, #ffeaee, #ffeaee, #ffe2e7, #ffd9e1, #ffd1da, #ffbecb, #ffabbc, #ff98ac, #ff849c);
+
+}
+
+.header_galeria{
+    background-color:#ffabbc ;
+}
+
+img {
+    width: 100%;
+}
+
+.galeria {
+    justify-items: center;
+    align-items: center;
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas:
+        "primertitulogal segundotitulogal"
+        "masaje                       mascarita"
+        "hialuronico                  peeling";
+}
+
+.primertitulogal {
+    grid-area: primertitulogal;
+    text-align: center;
+}
+
+.masaje {
+    grid-area: masaje;
+}
+
+.hialuronico {
+    grid-area: hialuronico;
+}
+
+.segundotitulogal {
+    grid-area: segundotitulogal;
+    text-align: center;
+
+}
+
+.mascartia {
+    grid-area: mascarita;
+}
+
+.peeling {
+    grid-area: peeling;
+}

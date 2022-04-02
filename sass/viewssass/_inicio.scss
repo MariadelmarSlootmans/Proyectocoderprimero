@@ -1,0 +1,45 @@
+
+.presentacion {
+    align-items: center;
+    display: grid;
+    grid-gap: 20px;
+    grid-template-areas:
+        "presentacion__parrafo     presentacion__picture2  "
+        "presentacion__picture      presentacion__parrafo2  ";
+}
+
+
+.presentacion__picture {
+    grid-area: presentacion__picture;
+}
+
+.presentacion__picture2 {
+    grid-area: presentacion__picture2;
+}
+
+.titulo {
+    font-size:  $texto-lg;
+    font-style: italic;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.presentacion__img {
+    width: 100%;
+}
+
+.presentacion__parrafo {
+    grid-area: presentacion__parrafo;
+    font-style: normal;
+    font-size: $texto-min;
+    padding: 1em;
+}
+
+.presentacion__parrafo2 {
+    grid-area: presentacion__parrafo2;
+    font-style: normal;
+    font-size: $texto-min;
+    padding: 1em;
+}
+

@@ -1,0 +1,29 @@
+footer {
+    background-color:  $principal;
+    height: 21em;
+
+    .foot {
+        justify-content: space-between;
+        align-items: center;
+        padding: 5rem 2rem;
+    }
+
+    .boto {
+        font-size: $texto-md;
+        font-family: $font-primary;
+        color: white;
+        border: 3px solid  $secundario;
+        background-color:  $secundario;
+        border-radius: 20px;
+
+        .boto:hover {
+            border: 3px solid $terciario;
+            background-color: $terciario;
+        }
+    }
+
+    .redes {
+        flex-basis: 30%;
+        justify-content: space-between;
+    }
+}

@@ -1,0 +1,49 @@
+
+.bodyproductos {
+    background-color:  $principal
+}
+
+.nosprod {
+    font-size: 3.5em;
+    font-style: italic;
+    text-align: center;
+
+}
+
+.galeriadeproductos {
+    margin: 5rem;
+    display: grid;
+    grid-gap: 20px;
+  /* grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: repeat(2, 1fr); */
+    grid-template-areas:
+        "prod3 prod4  prod5 "
+}
+
+.prod1 {
+    grid-area: prod1;
+}
+
+.prod2 {
+    grid-area: prod2;
+}
+
+.prod3 {
+    grid-area: prod3;
+
+}
+
+.prod4 {
+    grid-area: prod4;
+
+}
+
+.prod5 {
+    grid-area: prod5;
+
+}
+
+.prod7 {
+    text-align: center;
+    padding: 1rem;
+}
