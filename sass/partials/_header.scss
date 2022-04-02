@@ -13,21 +13,44 @@ header {
         flex-basis: 40%;
         justify-content: space-between;
 
-        .menu__item {
+        &__item {
             border: 3px solid $secundario;
             background-color: $secundario;
             border-radius: 20px;
         }
-    
-        .menu__item:hover {
+
+        &__item:hover {
             border: 3px solid $terciario;
             background-color: $terciario;
         }
-    
-        .menu .menu__item .menu__link {
+
+        & &__item &__link {
             font-size: $texto-md;
             padding: 0.5rem;
+            font-family:  $font-primary;
         }
 
+    } 
+
+    @media screen and (max-width: 768px) {
+
+        header {
+            padding: 2em;
+
+            .navbar {
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+
+        }
     }
+
+    @media screen and (max-width:320px) {
+
+        header .navbar {
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+    }
+    
 }

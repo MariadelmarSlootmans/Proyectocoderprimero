@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2? family= Poppins:ital,wght@0,200;0,400;0,500;1,100;1,200;1,300;1,400;1,500 & display=swap");
 /* Miscelaneous*/
+/* Variables */
 /* Normalize */
 * {
   margin: 0%;
@@ -39,7 +40,6 @@ a {
   max-width: 1262px;
   margin: 0 auto; }
 
-/* Variables */
 /*Partials*/
 header {
   display: inline-block;
@@ -52,16 +52,27 @@ header {
   header .menu {
     flex-basis: 40%;
     justify-content: space-between; }
-    header .menu .menu__item {
+    header .menu__item {
       border: 3px solid #5D8A7C;
       background-color: #5D8A7C;
       border-radius: 20px; }
-    header .menu .menu__item:hover {
+    header .menu__item:hover {
       border: 3px solid #95B8AD;
       background-color: #95B8AD; }
-    header .menu .menu .menu__item .menu__link {
+    header .menu header .menu__item header .menu__link {
       font-size: 1.2em;
-      padding: 0.5rem; }
+      padding: 0.5rem;
+      font-family: "Poppins"; }
+  @media screen and (max-width: 768px) {
+    header header {
+      padding: 2em; }
+      header header .navbar {
+        flex-wrap: wrap;
+        justify-content: center; } }
+  @media screen and (max-width: 320px) {
+    header header .navbar {
+      flex-wrap: wrap;
+      justify-content: center; } }
 
 footer {
   background-color: #FFEAEE;
@@ -83,6 +94,14 @@ footer {
   footer .redes {
     flex-basis: 30%;
     justify-content: space-between; }
+  @media screen and (max-width: 768px) {
+    footer .foot {
+      padding: 0 2em;
+      flex-wrap: wrap;
+      justify-content: center;
+      flex-direction: column; }
+    footer .boto {
+      margin: 0.5em; } }
 
 /*Viewssass*/
 .presentacion {

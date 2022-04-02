@@ -413,14 +413,14 @@ img {
 /* Mediaq  1200px, 1024px, 768px, 600px, 480px, 320px.*/
 
 @media screen and (max-width: 768px) {
-    header {
+    /* header {
         padding: 2em;
     }
 
     header .navbar {
         flex-wrap: wrap;
         justify-content: center;
-    }
+    } */
 
     .presentacion {
         flex-grow: 1;
@@ -434,7 +434,7 @@ img {
         font-size: 1.5em;
     }
 
-
+    /* 
     .foot {
         padding: 0 2em;
         flex-wrap: wrap;
@@ -445,18 +445,19 @@ img {
     .boto {
         margin: 0.5em;
     }
-}
+} */
 
-@media screen and (max-width:320px) {
+    @media screen and (max-width:320px) {
 
-    header .navbar {
+        /* header .navbar {
         flex-wrap: wrap;
         justify-content: center;
-    }
+                                } */
 
-    .nosotros {
-        grid-template-areas:
-            "historia "
-            " profesionales";
+        .nosotros {
+            grid-template-areas:
+                "historia "
+                " profesionales";
+        }
     }
-} 
+}
