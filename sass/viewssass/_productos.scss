@@ -47,3 +47,28 @@
     text-align: center;
     padding: 1rem;
 }
+
+
+
+.pproductos{
+    text-align: center;
+    font-family: $font-primary;
+    color: $secundario;
+    font-size: $texto-md;
+    background-color: white;
+    font-weight: bold;
+    margin:5rem;
+    }
+
+.pproductos1{
+@extend .pproductos;
+margin:0%
+}
+
+.pproductos2{
+    @extend .pproductos1;
+}
+
+.pproductos3{
+    @extend .pproductos1;
+}

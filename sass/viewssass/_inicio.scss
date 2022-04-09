@@ -1,4 +1,3 @@
-
 .presentacion {
     align-items: center;
     display: grid;
@@ -6,40 +5,81 @@
     grid-template-areas:
         "presentacion__parrafo     presentacion__picture2  "
         "presentacion__picture      presentacion__parrafo2  ";
+
+    &__picture {
+        grid-area: presentacion__picture;
+    }
+
+    &__picture2 {
+        grid-area: presentacion__picture2;
+    }
+
+    &__img {
+        width: 100%;
+    }
+
+    &__parrafo {
+        font-family: $font-primary;
+        grid-area: presentacion__parrafo;
+        font-style: normal;
+        font-size: 2em;
+        padding: 1em;
+    }
+
+    &__parrafo2 {
+        font-family: $font-primary;
+        grid-area: presentacion__parrafo2;
+        font-style: normal;
+        font-size: 2em;
+        padding: 1em;
+    }
+
 }
 
-
-.presentacion__picture {
-    grid-area: presentacion__picture;
-}
-
-.presentacion__picture2 {
-    grid-area: presentacion__picture2;
-}
 
 .titulo {
-    font-size:  $texto-lg;
+    font-family: $font-primary;
+    font-size: $texto-lg;
     font-style: italic;
     justify-content: center;
     text-align: center;
     margin-bottom: 3rem;
 }
 
-.presentacion__img {
+
+/* INTENTO DE MAPA PERO NO PUEDO*/
+
+// main{
+//     max-width: 1080px;
+//     margin: 0 auto;
+
+//     div{
+//         width: 100%;
+//         height: auto;
+//         background-size: cover;
+//     }
+// }
+
+// @for $i from 1 through 3 {
+//     .img-#{$i} {
+//         width: 100%;
+//         // height: 500px;
+//         background-size: cover;
+//         background-image: url("../../assets/img/img-#{$i}.jpg");
+//     }
+// }
+
+$images: (
+    img-1: "img-1",
+    img-2:"img-2",
+    img-3:"img-3",
+);
+
+@each $image, $value in $images {
+    .img-#{$image} {
     width: 100%;
+    height: 200px;
+    background-size: cover;
+    background-image: url("../../assets/img/#{$value}.jpg");
+    }
 }
-
-.presentacion__parrafo {
-    grid-area: presentacion__parrafo;
-    font-style: normal;
-    font-size: $texto-min;
-    padding: 1em;
-}
-
-.presentacion__parrafo2 {
-    grid-area: presentacion__parrafo2;
-    font-style: normal;
-    font-size: $texto-min;
-    padding: 1em;
-}
-

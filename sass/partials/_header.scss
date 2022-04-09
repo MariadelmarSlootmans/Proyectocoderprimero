@@ -2,26 +2,30 @@ header {
     display: inline-block;
     background-color: $principal;
     width: 100%;
+    
 
     .navbar {
-        justify-content: space-between;
-        align-items: center;
+        min-height: 10vh;
+        @include flex (row, space-between, center, 2rem);
         padding: 5rem 2rem;
     }
 
     .menu {
         flex-basis: 40%;
-        justify-content: space-between;
+        @include flex (row, space-between, center, 2rem);
+
 
         &__item {
-            border: 3px solid $secundario;
+            border: 5px solid $secundario;
             background-color: $secundario;
-            border-radius: 20px;
+            border-radius: 10px;
+            font-family: $font-primary;
         }
 
         &__item:hover {
-            border: 3px solid $terciario;
+            border: 5px solid $terciario;
             background-color: $terciario;
+        
         }
 
         & &__item &__link {
@@ -29,7 +33,6 @@ header {
             padding: 0.5rem;
             font-family:  $font-primary;
         }
-
     } 
 
     @media screen and (max-width: 768px) {

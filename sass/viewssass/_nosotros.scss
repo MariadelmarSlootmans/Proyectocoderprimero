@@ -18,10 +18,11 @@ h3 {
 }
 
 .textohistoria {
-    font-size: $texto-min;
-    margin: 10px;
+    font-size: $texto-md;
+    margin: 20px;
     text-align: center;
     flex-basis: 50%;
+    font-family: $font-primary;
 }
 
 
@@ -50,11 +51,12 @@ h3 {
     border-radius: 20px;
     text-align: center;
     padding: 1rem;
-}
 
-.botonnosotros:hover {
-    border: 3px solid $terciario;
-    background-color: $terciario;
+    .botonnosotros:hover {
+        border: 3px solid $terciario;
+        background-color: $terciario;
+    }
+
 }
 
 

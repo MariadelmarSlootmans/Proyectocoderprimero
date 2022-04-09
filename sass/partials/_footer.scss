@@ -1,10 +1,9 @@
 footer {
     background-color:  $principal;
-    height: 21em;
+  
 
     .foot {
-        justify-content: space-between;
-        align-items: center;
+        @include flex (row, space-between, center, 2rem);
         padding: 5rem 2rem;
     }
 
@@ -23,9 +22,25 @@ footer {
     }
 
     .redes {
+        @include flex (row, space-between, center, 2rem);
         flex-basis: 30%;
-        justify-content: space-between;
     }
+
+// $boto: ( /* declaramos nuestro mapa */
+// terminos: #5D8A7C,
+// privacidad: #FF849C,
+// );
+
+// @each $red,$color in $boto {
+//     .btn--#{$red}{
+//         background-color: $color;
+//     }
+    
+// }
+
+
+
+
 
     @media screen and (max-width: 768px) {
         .foot {
