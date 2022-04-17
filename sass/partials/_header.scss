@@ -35,25 +35,25 @@ header {
         }
     } 
 
-    @media screen and (max-width: 768px) {
+    // @media screen and (max-width: 768px) {
 
-        header {
-            padding: 2em;
+    //     header {
+    //         padding: 2em;
 
-            .navbar {
-                flex-wrap: wrap;
-                justify-content: center;
-            }
+    //         .navbar {
+    //             flex-wrap: wrap;
+    //             justify-content: center;
+    //         }
 
-        }
-    }
+    //     }
+    // }
 
-    @media screen and (max-width:320px) {
+    // @media screen and (max-width:320px) {
 
-        header .navbar {
-            flex-wrap: wrap;
-            justify-content: center;
-        }
-    }
+    //     header .navbar {
+    //         flex-wrap: wrap;
+    //         justify-content: center;
+    //     }
+    // }
     
 }
