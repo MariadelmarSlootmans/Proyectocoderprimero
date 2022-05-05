@@ -1,3 +1,13 @@
+
+.titulo {
+    font-family: $font-primary;
+    font-size: $texto-lg;
+    font-style: italic;
+    justify-content: center;
+    text-align: center;
+    margin: 3rem;
+}
+
 .presentacion {
     align-items: center;
     display: grid;
@@ -12,10 +22,12 @@
 
     &__picture2 {
         grid-area: presentacion__picture2;
+    
     }
 
     &__img {
         width: 100%;
+        margin: 2rem;
     }
 
     &__parrafo {
@@ -36,29 +48,6 @@
 
 }
 
-
-.titulo {
-    font-family: $font-primary;
-    font-size: $texto-lg;
-    font-style: italic;
-    justify-content: center;
-    text-align: center;
-    margin-bottom: 3rem;
-}
-
-
-/* INTENTO DE MAPA PERO NO PUEDO*/
-
-// main{
-//     max-width: 1080px;
-//     margin: 0 auto;
-
-//     div{
-//         width: 100%;
-//         height: auto;
-//         background-size: cover;
-//     }
-// }
 
 // @for $i from 1 through 3 {
 //     .img-#{$i} {
@@ -83,3 +72,4 @@ $images: (
     background-image: url("../../assets/img/#{$value}.jpg");
     }
 }
+

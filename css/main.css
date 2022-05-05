@@ -1,75 +1,107 @@
 /* Miscelaneous*/
 @import url("https://fonts.googleapis.com/css2? family= Poppins:ital,wght@0,200;0,400;0,500;1,100;1,200;1,300;1,400;1,500 & display=swap");
+
 /* Variables */
 /* Normalize */
 * {
   margin: 0%;
   padding: 0%;
-  box-sizing: border-box; }
+  box-sizing: border-box;
+}
 
 /* Globales */
 html {
   font-size: 62.5%;
-  font-family: poppins; }
+  font-family: poppins;
+}
 
 ul {
-  list-style-type: none; }
+  list-style-type: none;
+}
 
 a {
   text-decoration: none;
   color: white;
-  display: inline-block; }
+  display: inline-block;
+}
 
 /* Ayudas */
 .flex-colum {
   display: flex;
-  flex-direction: column; }
+  flex-direction: column;
+}
 
 .contenedor-header {
   max-width: 1257px;
-  margin: 0 auto; }
+  margin: 0 auto;
+}
 
 .contenedor-texto {
   max-width: 1146px;
-  margin: 0 auto; }
+  margin: 0 auto;
+}
 
 .contenedor-footer {
   max-width: 1262px;
-  margin: 0 auto; }
+  margin: 0 auto;
+}
 
 /*Partials*/
 header {
   display: inline-block;
   background-color: #FFEAEE;
-  width: 100%; }
-  header .navbar {
-    min-height: 10vh;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    gap: 2rem;
-    padding: 5rem 2rem; }
-  header .menu {
-    flex-basis: 40%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    gap: 2rem; }
-    header .menu__item {
-      border: 5px solid #5D8A7C;
-      background-color: #5D8A7C;
-      border-radius: 10px;
-      font-family: "Poppins"; }
-    header .menu__item:hover {
-      border: 5px solid #95B8AD;
-      background-color: #95B8AD; }
-    header .menu header .menu__item header .menu__link {
-      font-size: 1.2em;
-      padding: 0.5rem;
-      font-family: "Poppins"; }
-  @media screen and (max-width: 768px) {
+  width: 100%;
+  color:white;
+}
+
+header .navbar {
+  min-height: 10vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+  padding: 5rem 2rem;
+}
+
+header .menu {
+  flex-basis: 40%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items:center;
+  gap: 2rem;
+  flex-grow: 0;
+}
+
+header .menu__item {
+  border: 5px solid #5D8A7C;
+  background-color: #5D8A7C;
+  border-radius: 10px;
+  font-family: "Poppins";
+}
+
+header .menu__item:hover {
+  border: 5px solid #95B8AD;
+  background-color: #95B8AD;
+}
+
+header .menu header .menu__item header .menu__link {
+  font-size: 1.2em;
+  padding: 0.5rem;
+  font-family: "Poppins";
+}
+
+
+.navbar-light .navbar-nav .nav-link {
+  color:white;
+}
+
+.navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .show>.nav-link {
+  color: white;
+}
+
+/* @media screen and (max-width: 768px) {
     header header {
       padding: 2em; }
       header header .navbar {
@@ -78,67 +110,94 @@ header {
   @media screen and (max-width: 320px) {
     header header .navbar {
       flex-wrap: wrap;
-      justify-content: center; } }
+      justify-content: center; } } */
 
 footer {
-  background-color: #FFEAEE; }
+  background-color: #FFEAEE;
+}
+
+footer .foot {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+  padding: 5rem 2rem;
+}
+
+footer .boto {
+  font-size: 1.2em;
+  font-family: "Poppins";
+  color: white;
+  border: 3px solid #5D8A7C;
+  background-color: #5D8A7C;
+  border-radius: 20px;
+}
+
+footer .boto .boto:hover {
+  border: 3px solid #95B8AD;
+  background-color: #95B8AD;
+}
+
+footer .redes {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+  flex-basis: 30%;
+}
+
+@media screen and (max-width: 768px) {
   footer .foot {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    gap: 2rem;
-    padding: 5rem 2rem; }
+    padding: 0 2em;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: column;
+  }
+
   footer .boto {
-    font-size: 1.2em;
-    font-family: "Poppins";
-    color: white;
-    border: 3px solid #5D8A7C;
-    background-color: #5D8A7C;
-    border-radius: 20px; }
-    footer .boto .boto:hover {
-      border: 3px solid #95B8AD;
-      background-color: #95B8AD; }
-  footer .redes {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    gap: 2rem;
-    flex-basis: 30%; }
-  @media screen and (max-width: 768px) {
-    footer .foot {
-      padding: 0 2em;
-      flex-wrap: wrap;
-      justify-content: center;
-      flex-direction: column; }
-    footer .boto {
-      margin: 0.5em; } }
+    margin: 0.5em;
+  }
+}
 
 /*Viewssass*/
 .presentacion {
   align-items: center;
   display: grid;
   grid-gap: 20px;
-  grid-template-areas: "presentacion__parrafo     presentacion__picture2  " "presentacion__picture      presentacion__parrafo2  "; }
-  .presentacion__picture {
-    grid-area: presentacion__picture; }
-  .presentacion__picture2 {
-    grid-area: presentacion__picture2; }
-  .presentacion__img {
-    width: 100%; }
-  .presentacion__parrafo {
-    font-family: "Poppins";
-    grid-area: presentacion__parrafo;
-    font-style: normal;
-    font-size: 2em;
-    padding: 1em; }
-  .presentacion__parrafo2 {
-    font-family: "Poppins";
-    grid-area: presentacion__parrafo2;
-    font-style: normal;
-    font-size: 2em;
-    padding: 1em; }
+  grid-template-areas: "presentacion__parrafo     presentacion__picture2  "
+    "presentacion__picture      presentacion__parrafo2  ";
+}
+
+.presentacion__picture {
+  grid-area: presentacion__picture;
+}
+
+.presentacion__picture2 {
+  grid-area: presentacion__picture2;
+}
+
+.presentacion__img {
+  margin: 2rem;
+  width: 100%;
+}
+
+.presentacion__parrafo {
+  font-family: "Poppins";
+  grid-area: presentacion__parrafo;
+  font-style: normal;
+  font-size: 2em;
+  padding: 1em;
+}
+
+.presentacion__parrafo2 {
+  font-family: "Poppins";
+  grid-area: presentacion__parrafo2;
+  font-style: normal;
+  font-size: 2em;
+  padding: 2em;
+}
 
 .titulo {
   font-family: "Poppins";
@@ -146,63 +205,76 @@ footer {
   font-style: italic;
   justify-content: center;
   text-align: center;
-  margin-bottom: 3rem; }
+  margin: 3rem;
+}
 
 /* INTENTO DE MAPA PERO NO PUEDO*/
 .img-img-1 {
   width: 100%;
   height: 200px;
   background-size: cover;
-  background-image: url("../../assets/img/img-1.jpg"); }
+  background-image: url("../../assets/img/img-1.jpg");
+}
 
 .img-img-2 {
   width: 100%;
   height: 200px;
   background-size: cover;
-  background-image: url("../../assets/img/img-2.jpg"); }
+  background-image: url("../../assets/img/img-2.jpg");
+}
 
 .img-img-3 {
   width: 100%;
   height: 200px;
   background-size: cover;
-  background-image: url("../../assets/img/img-3.jpg"); }
+  background-image: url("../../assets/img/img-3.jpg");
+}
 
 .boton__contacto {
   display: flex;
-  justify-content: space-around; }
-  .boton__contacto1 {
-    font-size: 1.2em;
-    font-family: "Poppins";
-    color: black;
-    border: 3px solid #5D8A7C;
-    border-radius: 20px;
-    text-align: center;
-    padding: 1rem;
-    background-color: #FFEAEE; }
+  justify-content: space-around;
+}
+
+.boton__contacto1 {
+  font-size: 1.2em;
+  font-family: "Poppins";
+  color: black;
+  border: 3px solid #5D8A7C;
+  border-radius: 20px;
+  text-align: center;
+  padding: 1rem;
+  background-color: #FFEAEE;
+}
 
 .titulo__contacto {
   text-align: center;
   font-family: "Poppins";
-  background-color: #FF849C; }
+  background-color: #FF849C;
+}
 
 .titulo__contacto2 {
   text-align: center;
-  font-family: "Poppins"; }
+  font-family: "Poppins";
+}
 
 .fondocontacto {
   max-width: 1080px;
   margin: 0 auto;
-  background-color: #5D8A7C; }
+  background-color: #5D8A7C;
+}
 
 /* Galeria*/
 .bodygaleria {
-  background-image: linear-gradient(to top, #ffeaee, #ffeaee, #ffeaee, #ffeaee, #ffeaee, #ffe2e7, #ffd9e1, #ffd1da, #ffbecb, #ffabbc, #ff98ac, #ff849c); }
+  background-image: linear-gradient(to top, #ffeaee, #ffeaee, #ffeaee, #ffeaee, #ffeaee, #ffe2e7, #ffd9e1, #ffd1da, #ffbecb, #ffabbc, #ff98ac, #ff849c);
+}
 
 .header_galeria {
-  background-color: #ffabbc; }
+  background-color: #ffabbc;
+}
 
 img {
-  width: 100%; }
+  width: 100%;
+}
 
 .galeria {
   justify-items: center;
@@ -210,59 +282,77 @@ img {
   display: grid;
   grid-gap: 20px;
   grid-template-columns: repeat(2, 1fr);
-  grid-template-areas: "primertitulogal segundotitulogal" "masaje                       mascarita" "hialuronico                  peeling"; }
+  grid-template-areas: "primertitulogal segundotitulogal"
+    "masaje                       mascarita"
+    "hialuronico                  peeling";
+}
 
 .primertitulogal {
   grid-area: primertitulogal;
-  text-align: center; }
+  text-align: center;
+}
 
 .masaje {
-  grid-area: masaje; }
+  grid-area: masaje;
+}
 
 .hialuronico {
-  grid-area: hialuronico; }
+  grid-area: hialuronico;
+}
 
 .segundotitulogal {
   grid-area: segundotitulogal;
-  text-align: center; }
+  text-align: center;
+}
 
 .mascartia {
-  grid-area: mascarita; }
+  grid-area: mascarita;
+}
 
 .peeling {
-  grid-area: peeling; }
+  grid-area: peeling;
+}
 
 .bodynosotros {
-  background-color: #FFEAEE; }
+  background-color: #FFEAEE;
+}
 
 h2 {
   font-size: 3.5em;
-  font-style: italic; }
+  font-style: italic;
+}
 
 h3 {
   font-size: 1.8em;
-  font-style: bold; }
+  font-style: bold;
+}
 
 .img {
-  width: 100%; }
+  width: 100%;
+}
 
 .textohistoria {
   font-size: 1.2em;
   margin: 20px;
   text-align: center;
   flex-basis: 50%;
-  font-family: "Poppins"; }
+  font-family: "Poppins";
+}
 
 .nosotros {
   display: grid;
   grid-gap: 20px;
-  grid-template-areas: "historia           profesionales " "historia              profesionales"; }
+  grid-template-areas: "historia           profesionales "
+    "historia              profesionales";
+}
 
 .historia {
-  grid-area: historia; }
+  grid-area: historia;
+}
 
 .profesionales {
-  grid-area: profesionales; }
+  grid-area: profesionales;
+}
 
 .botonnosotros {
   font-size: 1.2em;
@@ -272,47 +362,61 @@ h3 {
   background-color: #5D8A7C;
   border-radius: 20px;
   text-align: center;
-  padding: 1rem; }
-  .botonnosotros .botonnosotros:hover {
-    border: 3px solid #95B8AD;
-    background-color: #95B8AD; }
+  padding: 1rem;
+}
+
+.botonnosotros .botonnosotros:hover {
+  border: 3px solid #95B8AD;
+  background-color: #95B8AD;
+}
 
 .primert_nosotros {
-  text-align: center; }
+  text-align: center;
+}
 
 .profesionales {
   align-items: center;
   justify-items: center;
   display: grid;
   grid-gap: 20px;
-  grid-template-areas: "segundot_nosotros segundot_nosotros segundot_nosotros " " primerprofesional segundoprofesional tercerprofesional" " botonnosotros botonnosotros botonnosotros "; }
+  grid-template-areas: "segundot_nosotros segundot_nosotros segundot_nosotros "
+    " primerprofesional segundoprofesional tercerprofesional"
+    " botonnosotros botonnosotros botonnosotros ";
+}
 
 .segundot_nosotros {
   grid-area: segundot_nosotros;
-  text-align: center; }
+  text-align: center;
+}
 
 .primerprofesional {
   grid-area: primerprofesional;
-  text-align: center; }
+  text-align: center;
+}
 
 .segundoprofesional {
   grid-area: segundoprofesional;
-  text-align: center; }
+  text-align: center;
+}
 
 .tercerprofesional {
   grid-area: tercerprofesional;
-  text-align: center; }
+  text-align: center;
+}
 
 .botonnosotros {
-  grid-area: botonnosotros; }
+  grid-area: botonnosotros;
+}
 
 .bodyproductos {
-  background-color: #FFEAEE; }
+  background-color: #FFEAEE;
+}
 
 .nosprod {
   font-size: 3.5em;
   font-style: italic;
-  text-align: center; }
+  text-align: center;
+}
 
 .galeriadeproductos {
   margin: 5rem;
@@ -320,35 +424,49 @@ h3 {
   grid-gap: 20px;
   /* grid-template-columns: repeat(3, 1fr);
       grid-template-rows: repeat(2, 1fr); */
-  grid-template-areas: "prod3 prod4  prod5 "; }
+  grid-template-areas: "prod3 prod4  prod5 ";
+}
 
 .prod1 {
-  grid-area: prod1; }
+  grid-area: prod1;
+}
 
 .prod2 {
-  grid-area: prod2; }
+  grid-area: prod2;
+}
 
 .prod3 {
-  grid-area: prod3; }
+  grid-area: prod3;
+}
 
 .prod4 {
-  grid-area: prod4; }
+  grid-area: prod4;
+}
 
 .prod5 {
-  grid-area: prod5; }
+  grid-area: prod5;
+}
 
 .prod7 {
   text-align: center;
-  padding: 1rem; }
+  padding: 1rem;
+}
 
-.pproductos, .pproductos1, .pproductos2, .pproductos3 {
+.pproductos,
+.pproductos1,
+.pproductos2,
+.pproductos3 {
   text-align: center;
   font-family: "Poppins";
   color: #5D8A7C;
   font-size: 1.2em;
   background-color: white;
   font-weight: bold;
-  margin: 5rem; }
+  margin: 5rem;
+}
 
-.pproductos1, .pproductos2, .pproductos3 {
-  margin: 0%; }
+.pproductos1,
+.pproductos2,
+.pproductos3 {
+  margin: 0%;
+}
