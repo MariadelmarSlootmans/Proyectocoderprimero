@@ -14,25 +14,52 @@
 </head>
 
 <body class="bodynosotros">
-    <header>
-        <!-- Navegador  nosotros -->
-        <nav class="navbar contenedor-header">
-            <picture class="logo">
-                <a href="../../index.html"><img src="../img/logoskinlovers.png" alt="Logodemarca"></a>
-            </picture>
-            <ul class="menu">
-                <li class="menu__item"><a href="../../index.html" class="menu__link">INICIO</a></li>
-                <li class="menu__item"><a href="./nosotros.html" class="menu__link">NOSOTROS</a></li>
-                <li class="menu__item"><a href="./productos.html" class="menu__link">PRODUCTOS</a></li>
-                <li class="menu__item"><a href="./contacto.html" class="menu__link">CONTACTO</a></li>
-                <li class="menu__item"><a href="./galeria.html" class="menu__link">GALERIA</a></li>
-            </ul>
+    <header class="header">
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="../../index.html"><img src="../img/logoskinlovers.png"
+                        alt="Logodemarca"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="menu collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="menu navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class=" menu menu__item nav-item">
+                            <a class="nav-link active" aria-current="page" href="../../index.html">INICIO</a>
+                        </li>
+                        <li class=" menu menu__item nav-item">
+                            <a class="nav-link" href="../views/nosotros.html">NOSOTROS</a>
+                        </li>
+                        <li class="menu menu__item nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                PRODUCTOS
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item"
+                                        href="../views/productos.html">Nuestros
+                                        productos</a></li>
+                                <li><a class="dropdown-item"
+                                        href="../views/galeria.html">Galería de
+                                        imagenes</a></li>
+                            </ul>
+                        </li>
+                        <li class="menu menu__item nav-item">
+                            <a class="nav-link" href="../views/contacto.html">CONTACTANOS!</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </nav>
+        </div>
     </header>
     <!-- Main con dos secciones: Historia y profesionales  -->
     <main>
-        <section class="nosotros contenedor-texto">
-            <article class="historia"">
+        <section class="row">
+            <div class="col-12 col-sm-12 col-md-12 col-lg-6">
+            <article class="historia">
                 <h2 class=" primert_nosotros">CONOCE MÁS DE NOSOTROS! </h2>
                 <p class="textohistoria"> SkinLovers fue fundado en Agosto del 2019 con la creencia de que todos tenemos
                     el poder de
@@ -50,6 +77,8 @@
                     grande en cuanto a la seguridad de los ingredientes.
                 </p>
             </article>
+        </div>
+        <div class="col-12 col-sm-12 col-md-12 col-lg-6">
             <article class="profesionales">
                 <h2 class="segundot_nosotros"> NUESTROS PROFESIONALES</h2>
                 <div class="primerprofesional">
@@ -81,7 +110,7 @@
                 </div>
                 <a href="../views/productos.html" class="botonnosotros"> Productos recomendados por nuestros
                     profesionales</a>
-
+                </div>
             </article>
         </section>
     </main>
