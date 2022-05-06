@@ -38,6 +38,20 @@ header {
   background-color: var(#FFEAEE);
 }
 
+
+.navbargaleria{
+  background-color: none;
+  min-height: 10vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: left;
+  gap: 1rem;
+  padding: 5rem 2rem;
+  flex-grow: 0;
+
+}
+
 .navbar {
   background-color: #FFEAEE;
   min-height: 10vh;
@@ -115,6 +129,7 @@ footer .boto {
   border: 3px solid #5D8A7C;
   background-color: #5D8A7C;
   border-radius: 20px;
+  margin-bottom: 1rem;
 }
 
 footer .boto .boto:hover {
@@ -245,9 +260,10 @@ footer .redes {
 
 img {
   width: 100%;
+  padding: 1rem;
 }
 
-.galeria {
+/* .galeria {
   justify-items: center;
   align-items: center;
   display: grid;
@@ -256,11 +272,12 @@ img {
   grid-template-areas: "primertitulogal segundotitulogal"
     "masaje                       mascarita"
     "hialuronico                  peeling";
-}
+} */
 
 .primertitulogal {
   grid-area: primertitulogal;
   text-align: center;
+  margin: 1rem;
 }
 
 .masaje {
@@ -274,6 +291,7 @@ img {
 .segundotitulogal {
   grid-area: segundotitulogal;
   text-align: center;
+  margin: 1rem;
 }
 
 .mascartia {
